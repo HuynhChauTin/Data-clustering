@@ -1,0 +1,471 @@
+{
+	"info": {
+		"_postman_id": "6746036e-e377-463c-9ea3-c3752852fcc8",
+		"name": "Cluster Score student",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28404219",
+		"_collection_link": "https://lunar-zodiac-474751.postman.co/workspace/Learn~8b6d5d3b-67a4-4789-8342-984137695732/collection/28404219-6746036e-e377-463c-9ea3-c3752852fcc8?action=share&source=collection_link&creator=28404219"
+	},
+	"item": [
+		{
+			"name": "Get Score Group",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:5000/api/get_Score_Group?group=A00&grade=11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"get_Score_Group"
+					],
+					"query": [
+						{
+							"key": "group",
+							"value": "A00"
+						},
+						{
+							"key": "grade",
+							"value": "11"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Score Subject by semester",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/score-subject-semester?subject=van&semester=4&n=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"score-subject-semester"
+					],
+					"query": [
+						{
+							"key": "subject",
+							"value": "van"
+						},
+						{
+							"key": "semester",
+							"value": "4"
+						},
+						{
+							"key": "n",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get score subject by grade",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/data_grade?subject=hoa&grade=10&n=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"data_grade"
+					],
+					"query": [
+						{
+							"key": "subject",
+							"value": "hoa"
+						},
+						{
+							"key": "grade",
+							"value": "10"
+						},
+						{
+							"key": "n",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Score Avg By semester",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/score_Avg_Semester?semester=5&n=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"score_Avg_Semester"
+					],
+					"query": [
+						{
+							"key": "semester",
+							"value": "5"
+						},
+						{
+							"key": "n",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Score Avg By year",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/score_Avg_year?grade=12&n=5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"score_Avg_year"
+					],
+					"query": [
+						{
+							"key": "grade",
+							"value": "12"
+						},
+						{
+							"key": "n",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Score Group by grade",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/get_Score_Group?grade=12&n=5&group=C00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"get_Score_Group"
+					],
+					"query": [
+						{
+							"key": "grade",
+							"value": "12"
+						},
+						{
+							"key": "n",
+							"value": "5"
+						},
+						{
+							"key": "group",
+							"value": "C00"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Top 5 subject from Avg by grade",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/get_Subject_From_Top5Avg?grade=11&student_code=1703323093",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"get_Subject_From_Top5Avg"
+					],
+					"query": [
+						{
+							"key": "grade",
+							"value": "11"
+						},
+						{
+							"key": "student_code",
+							"value": "1703323093"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create list group subject from 5 subject",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/create_group_subject_from_top5?student_code=1703323093",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"create_group_subject_from_top5"
+					],
+					"query": [
+						{
+							"key": "student_code",
+							"value": "1703323093"
+						},
+						{
+							"key": "data",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get group subject By subject",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/reverse_group_subject?subjects=Van,Su,Dia",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"reverse_group_subject"
+					],
+					"query": [
+						{
+							"key": "subjects",
+							"value": "Van,Su,Dia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find group subject sample",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/find_group_subject?code_student=1703323069",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"find_group_subject"
+					],
+					"query": [
+						{
+							"key": "code_student",
+							"value": "1703323069"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Recommend",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/recommend_group?code_student=1703323069",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"recommend_group"
+					],
+					"query": [
+						{
+							"key": "code_student",
+							"value": "1703323069"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"students"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get score",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/scores",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"scores"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get rate",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/rates",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"rates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Student By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/students/1703323070",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"students",
+						"1703323070"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Score by student id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/score/1703323070",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"score",
+						"1703323070"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Rate by student id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/rate/1703323070",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"rate",
+						"1703323070"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
